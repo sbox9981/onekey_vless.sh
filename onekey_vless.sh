@@ -17,7 +17,7 @@ cat>v2ray/config.json<<EOF
                                 "decryption": "none",
                                 "clients": [
                                         {
-                                                "id": "ffffffff-ffff-ffff-ffff-ffffffffffff"
+                                                "id": "ssssssss-ssss-ssss-ssss-ssssssssssss"
                                         }
                                 ]
                         },
@@ -48,4 +48,4 @@ sleep 3
 argo=$(cat argo.log | grep trycloudflare.com | awk 'NR==2{print}' | awk -F// '{print $2}' | awk '{print $1}')
 clear
 echo vless链接已经生成,IP地址可替换为CF优选IP
-echo 'vless://ffffffff-ffff-ffff-ffff-ffffffffffff@42.186.175.8:443?encryption=none&security=tls&type=ws&host='$argo'&path=%2f#argo'
+echo 'vless://ssssssss-ssss-ssss-ssss-ssssssssssss@42.186.175.8:443?encryption=none&security=tls&type=ws&host='$argo'&path=%2f#argo'
